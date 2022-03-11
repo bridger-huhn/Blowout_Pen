@@ -1,0 +1,106 @@
+"OPEN 6.3.4"
+"Wed Mar  9 2022 10:54:21"
+<open><version>"6.3.4"</version></open>
+<open><configfile>"/User/Configs/UserPrefs/LCF.xml"</configfile></open>
+<open><light><source>"6400-40 Fluorometer"</source><par_in>1<sensor>"LCF-1309"<cal>-1.13<actinity>1.00</actinity><transm>1.00</transm></cal></sensor><transm>1</transm></par_in><par_out>1<sensor>"Q43692"<cal>7.03</cal></sensor></par_out></light></open>
+<open><comps><file>"/User/Configs/Comps/StdFlrComp_6.1"<header>""</header><extras></extras></file><energybal>no<f_parIn>1</f_parIn><f_parOut>0</f_parOut><alphaK>0.16</alphaK></energybal><bc_total>9.290<stomatal_ratio>1</stomatal_ratio><bc_oneside>4.645<type>2</type><table>"/Sys/Lib/BLCTable_LCF"</table><area>2</area><slope>-1.35514</slope><offset>7.35514</offset><fan>5</fan></bc_oneside></bc_total></comps></open>
+<open><prompts><onlog>off</onlog><items>"DefaultFlrPrompts"<items[1]><id>4205</id><label>"BlueAbs"</label><desc>"Leaf abs in blue"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[1]><items[2]><id>4206</id><label>"RedAbs"</label><desc>"Leaf abs in red"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[2]><items[3]><id>4213</id><label>"Adark"</label><desc>"Dark photo value"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[3]><items[4]><id>4222</id><label>"PS2/1"</label><desc>"Photosystem Distribution Factor"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[4]></items></prompts></open>
+<open><constants><oxygen>21 %</oxygen><bb_vapor>1.5</bb_vapor><bb_oxy>0.9</bb_oxy></constants></open>
+<open><stability><items>"Flr Stability"<items[1]><id>30</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.5</value></slp></items[1]><items[2]><id>23</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.01</value></slp></items[2]><items[3]><id>-5</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[3]><items[4]><id>-80</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[4]></items></stability></open>
+<open><log><format>"FlrLogFmt_6.0"<items>{ -35 -21 -36 -76 30 23 36 -84 -100 -86 -88 -87 -89 -90 4202 4211 4212 4213 4206 4205 -81 4207 4215 4216 4220 4221 -96 4222 4223 21 25 221 -33 111 -34 11 -9 -10 -8 -1 -2 -4 -5 -14 -15 -7 -12 -13 -11 -65 -66 -72 -18 -19 -77 -78 -79 -23  }<hdr>{  }</hdr></items></format><options><beep>on</beep><match>"never"<time>30</time><co2>100</co2><delta>10</delta></match><hdr>normal</hdr><rem>normal</rem><stab>no</stab><stats>no<mean>no</mean><file>no</file><period>15</period></stats><excel>yes</excel><controls>yes</controls><comm>no</comm></options><datafile>"/User/03092022_BJH_penGH_2959"</datafile><button><action>"Normal Log"<code>" LogOneObsManual "</code></action></button><autoprog>"/User/Configs/AutoProgs/AutoLog2"<active>no</active></autoprog></log></open>
+<open><a2d><avgtime>4.0 secs</avgtime><userchans><ch20>"Not available"</ch20><ch21>"Off"</ch21><ch22>"Off"</ch22><ch23>"Not available"</ch23></userchans></a2d></open>
+<open><matching><type>0</type><disp>'a'</disp><settings>><CO2Limit>10.0</CO2Limit><H2OLimit>1.0</H2OLimit><MaxAutoTime>60</MaxAutoTime><AverageTime>10</AverageTime></settings></matching></open>
+<FlrSettings><version>"6.3.4"</version><Label>"StdFlrSettings_6.1"</Label><Measure><intensity>3</intensity><rate>1</rate><filter>3</filter><gain>1</gain></Measure><Flash><type>Rectangular</type><ramp>20 %<phase1>300 ms</phase1><phase2>300 ms</phase2><phase3>300 ms</phase3></ramp><duration>0.8 s</duration><target>9</target><blue></blue><rate>4</rate><filter>6</filter><autosave>no</autosave></Flash><DarkPulse><duration>6 secs</duration><farred>8<pre>1 s</pre><post>4 s</post></farred><rate>1</rate><filter>3</filter><autosave>no</autosave></DarkPulse><Calib><unit>"LCF-1309"</unit><red>-1.64</red><blue>-0.3</blue><zero>-2937.83</zero></Calib><Constants><red_abs>0.870</red_abs><blue_abs>0.920</blue_abs><a_dark>-1</a_dark><ps_ratio>0.5</ps_ratio></Constants><Stats><Period>10</Period></Stats></FlrSettings>
+<li6400><factory><unit>"PSC-2959"</unit><serviced>"21 Aug 2019"</serviced><fuseaware>0</fuseaware><co2mixer>yes</co2mixer><co2><coeffs>{ 0 0.205989 3.16949e-05 1.49661e-08 -1.92924e-12 1.94317e-16  }</coeffs><dvdt>-2.6</dvdt><xs>{ 0.000822 -0.000235  }</xs></co2><h2o><coeffs>{ 0 0.00568275 2.24742e-06 -4.24656e-12  }</coeffs><dvdt>-1</dvdt><xs>{ -0.00125 0.00157  }</xs></h2o><flow>{ 0 0.3733  }</flow><press>{ 87.033 0.00549  }</press></factory></li6400>
+<li6400><user><flow_zero>195.4</flow_zero><irga_zero><co2>117.4 78.4<at>28.4291</at></co2><h2o>39.4 78.4<at>28.4068</at></h2o></irga_zero><irga_span><co2>{ 0.989997 0.992395  }</co2><h2o>{ 0.994664 1.00721  }</h2o></irga_span><irga_match><co2>{ 0.782915 0.426393  }</co2><h2o>{ 0.00744596 -0.476075  }</h2o></irga_match><co2_mixer><pump_mv>4500</pump_mv><ppm>{ 2295.45 1081.66 427.779 260.366 119.455 70.2782 47.0309 40.2593  }</ppm><mv>{ 5000 3000 1500 1000 500 300 200 100  }</mv></co2_mixer><parin_offset>0</parin_offset><led_cal><unit>"SI-4076"</unit><mv>{ 10 25 50 100 1000 2000 3000 4000 5000  }</mv><qntm>{ 4.54245 18.0858 43.0567 91.6558 1020.22 2002.22 2932.21 3831.29 4690.01  }</qntm></led_cal><lcf_cal><unit>"LCF-1309"</unit><red><mv>{ 50 100 200 400 800 1500  }</mv><qntm>{ 79.4317 164.888 348.11 727.49 1500.08 2822.25  }</qntm></red><blue><mv>{ 100 500 1000 2000 3000 4000 5000  }</mv><qntm>{ 6.79659 31.2376 57.7882 100.992 139.48 173.131 200.965  }</qntm></blue></lcf_cal></user></li6400>
+"11:09:52 7_ACi"
+$STARTOFDATA$
+"Obs"	"HHMMSS"	"FTime"	"EBal?"	"Photo"	"Cond"	"Ci"	"FCnt"	"DCnt"	"Fo"	"Fm"	"Fo'"	"Fm'"	"Fs"	"Fv/Fm"	"Fv'/Fm'"	"PhiPS2"	"Adark"	"RedAbs"	"BlueAbs"	"%Blue"	"LeafAbs"	"PhiCO2"	"qP"	"qN"	"NPQ"	"ParIn@Fs"	"PS2/1"	"ETR"	"Trmmol"	"VpdL"	"CTleaf"	"Area"	"BLC_1"	"StmRat"	"BLCond"	"Tair"	"Tleaf"	"TBlk"	"CO2R"	"CO2S"	"H2OR"	"H2OS"	"RH_R"	"RH_S"	"Flow"	"PARi"	"PARo"	"Press"	"CsMch"	"HsMch"	"StableF"	"BLCslope"	"BLCoffst"	"f_parin"	"f_parout"	"alphaK"	"Status"
+"11:11:01 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"11:11:37 Launched AutoProg /User/Configs/AutoProgs/A-CiCurve2"
+"11:15:51 Stability: (Photo 20s SLP<0.5)(Cond 20s SLP<0.01)(H2OS 20s SLP<1)(F 20s SLP<1)"
+"11:15:51 Log Option: Logged values are 15 s averages"
+"11:15:51 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"11:15:51 CO2 Mixer: CO2R -> 400 uml"
+"11:15:51 Coolers: Tleaf -> 24.00 C"
+"11:15:51 Flow: Fixed -> 300 umol/s"
+"11:15:51 LCF Lamp: Off"
+"11:18:58 Fo=138"
+"11:18:58 RF#1 7579 um, Fmax=555 Int=9 Mod=20 Filter=50"
+"11:18:59 Fm=555"
+1	"11:18:59"	1517.5	0	0.718	0.00423	117	1	0	138.1	555.9	0.0	0.0	0.0	0.752	0.000	0.000	0.606	0.870	0.920	0	0.870	0.102	0.000	1.000	0.000	0.0	0.5	0.000	0.117	2.08	24.09	2	4.64	1	9.29	24.67	24.09	24.61	400.05	399.54	12.032	12.108	29.82	30.01	301.0	1	439	77.28	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:18:59 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"11:24:00 CO2 Mixer: CO2R -> 400 uml"
+"11:29:01 Fs=174 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:29:01 RF#2 7783 um, Fmax=308 Int=9 Mod=20 Filter=50"
+"11:29:02 Fm'=308"
+"11:29:10 Dark#1 Fmin=148 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:29:10 Fo'=148"
+2	"11:29:10"	2121.5	0	4.4	0.00603	-764	2	1	138.1	555.9	148.6	309.0	174.8	0.752	0.519	0.434	0.606	0.870	0.920	10	0.875	0.006	0.837	0.606	0.799	701.3	0.5	133.297	0.189	2.35	25.16	2	4.64	1	9.29	25.04	25.16	24.96	400.11	397.14	10.957	11.081	26.57	26.87	301.0	701	457	77.26	0.426	-0.476	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:29:10 CO2 Mixer: CO2R -> 300 uml"
+"11:34:11 Fs=173 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:34:11 RF#3 7776 um, Fmax=306 Int=9 Mod=20 Filter=50"
+"11:34:12 Fm'=306"
+"11:34:20 Dark#2 Fmin=146 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:34:20 Fo'=146"
+3	"11:34:20"	2432.5	0	3.46	0.00628	-579	3	2	138.1	555.9	146.4	306.1	173.0	0.752	0.522	0.435	0.606	0.870	0.920	10	0.875	0.005	0.833	0.610	0.816	701.1	0.5	133.323	0.2	2.4	25.39	2	4.64	1	9.29	25.25	25.39	25.17	300.02	297.67	10.932	11.064	26.16	26.48	300.9	701	454	77.25	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:34:20 CO2 Mixer: CO2R -> 200 uml"
+"11:39:21 Fs=172 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:39:21 RF#4 7793 um, Fmax=297 Int=9 Mod=20 Filter=50"
+"11:39:22 Fm'=297"
+"11:39:30 Dark#3 Fmin=146 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:39:30 Fo'=146"
+4	"11:39:30"	2743.0	0	2.24	0.00627	-369	4	3	138.1	555.9	146.6	297.2	172.1	0.752	0.507	0.421	0.606	0.870	0.920	10	0.875	0.003	0.831	0.632	0.870	701.7	0.5	129.287	0.2	2.4	25.38	2	4.64	1	9.29	25.33	25.38	25.25	200.07	198.55	10.902	11.034	25.98	26.29	301.0	702	178	77.24	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:39:30 CO2 Mixer: CO2R -> 100 uml"
+"11:44:31 Fs=171 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:44:31 RF#5 7813 um, Fmax=284 Int=9 Mod=20 Filter=50"
+"11:44:32 Fm'=284"
+"11:44:40 Dark#4 Fmin=144 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:44:40 Fo'=144"
+5	"11:44:40"	3053.5	0	0.991	0.00577	-174	5	4	138.1	555.9	144.8	285.0	171.2	0.752	0.492	0.399	0.606	0.870	0.920	10	0.875	0.001	0.812	0.659	0.951	698.0	0.5	121.953	0.179	2.34	25.03	2	4.64	1	9.29	25.05	25.03	25.00	100.11	99.44	10.863	10.981	26.31	26.59	301.0	698	455	77.25	0.426	-0.476	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:44:40 CO2 Mixer: CO2R -> 50 uml"
+"11:49:41 Fs=171 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:49:41 RF#6 7819 um, Fmax=274 Int=9 Mod=20 Filter=50"
+"11:49:42 Fm'=274"
+"11:49:50 Dark#5 Fmin=144 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:49:50 Fo'=144"
+6	"11:49:50"	3364.0	0	0.12	0.00563	14.1	6	5	138.1	555.9	144.3	274.6	171.1	0.752	0.474	0.377	0.606	0.870	0.920	10	0.875	-0.001	0.794	0.684	1.025	698.2	0.5	115.063	0.174	2.33	24.95	2	4.64	1	9.29	24.96	24.95	24.91	49.92	49.84	10.821	10.935	26.35	26.63	301.0	698	451	77.26	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:49:50 CO2 Mixer: CO2R -> 600 uml"
+"11:54:51 Fs=178 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:54:51 RF#7 7816 um, Fmax=322 Int=9 Mod=20 Filter=50"
+"11:54:52 Fm'=322"
+"11:55:00 Dark#6 Fmin=149 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:55:00 Fo'=149"
+7	"11:55:00"	3674.5	0	6.02	0.00504	-1.3E+03	7	6	138.1	555.9	149.1	322.7	178.3	0.752	0.538	0.448	0.606	0.870	0.920	10	0.875	0.009	0.832	0.573	0.723	698.2	0.5	136.730	0.156	2.33	24.91	2	4.64	1	9.29	24.91	24.91	24.86	600.03	595.97	10.709	10.812	26.15	26.40	301.0	698	439	77.25	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:55:00 CO2 Mixer: CO2R -> 700 uml"
+"12:00:01 Fs=182 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:00:01 RF#8 7831 um, Fmax=351 Int=9 Mod=20 Filter=50"
+"12:00:02 Fm'=351"
+"12:00:10 Dark#7 Fmin=153 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:00:10 Fo'=153"
+8	"12:00:10"	3985.0	0	6.1	0.00505	-1.22E+03	8	7	138.1	555.9	153.9	351.9	183.0	0.752	0.563	0.480	0.606	0.870	0.920	10	0.875	0.009	0.853	0.507	0.580	698.9	0.5	146.807	0.156	2.32	24.74	2	4.64	1	9.29	24.77	24.74	24.72	700.15	696.02	10.319	10.421	25.41	25.66	301.0	699	448	77.25	0.426	-0.476	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:00:10 CO2 Mixer: CO2R -> 1000 uml"
+"12:05:11 Fs=192 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:05:11 RF#9 7831 um, Fmax=394 Int=9 Mod=20 Filter=50"
+"12:05:12 Fm'=394"
+"12:05:20 Dark#8 Fmin=156 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:05:20 Fo'=156"
+9	"12:05:20"	4295.5	0	6.93	0.00412	-1.68E+03	9	8	138.1	555.9	156.7	394.2	192.5	0.752	0.603	0.512	0.606	0.870	0.920	10	0.875	0.010	0.849	0.405	0.410	698.9	0.5	156.437	0.127	2.33	24.71	2	4.64	1	9.29	24.74	24.71	24.69	999.76	995.08	10.266	10.350	25.33	25.54	301.0	699	454	77.25	0.426	-0.476	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:05:20 CO2 Mixer: CO2R -> 1200 uml"
+"12:10:21 Fs=197 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:10:21 RF#10 7825 um, Fmax=420 Int=9 Mod=20 Filter=50"
+"12:10:22 Fm'=420"
+"12:10:30 Dark#9 Fmin=161 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:10:30 Fo'=161"
+10	"12:10:30"	4606.0	0	6.96	0.00412	-1.5E+03	10	9	138.1	555.9	161.1	420.6	197.8	0.752	0.617	0.530	0.606	0.870	0.920	10	0.875	0.010	0.858	0.343	0.322	698.9	0.5	161.952	0.127	2.33	24.69	2	4.64	1	9.29	24.71	24.69	24.65	1199.92	1195.19	10.187	10.271	25.19	25.40	301.0	699	454	77.25	0.426	-0.476	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:10:30 CO2 Mixer: CO2R -> 1500 uml"
+"12:15:31 Fs=202 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:15:31 RF#11 7813 um, Fmax=445 Int=9 Mod=20 Filter=50"
+"12:15:32 Fm'=445"
+"12:15:40 Dark#10 Fmin=166 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:15:40 Fo'=166"
+11	"12:15:40"	4916.5	0	6.66	0.0041	-1.12E+03	11	10	138.1	555.9	166.5	445.4	202.6	0.752	0.626	0.545	0.606	0.870	0.920	10	0.875	0.010	0.871	0.284	0.248	698.2	0.5	166.530	0.129	2.36	24.85	2	4.64	1	9.29	24.81	24.85	24.76	1500.24	1495.69	10.103	10.187	24.82	25.03	301.0	698	453	77.26	0.426	-0.476	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"12:15:40 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"12:15:41 CO2 Mixer: CO2R -> 1500 uml"
+"12:15:41 Coolers: Tleaf -> 24.00 C"
+"12:15:41 Flow: Fixed -> 300 umol/s"
