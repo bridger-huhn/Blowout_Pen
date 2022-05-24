@@ -1,0 +1,230 @@
+"OPEN 6.3.4"
+"Wed Apr 20 2022 08:40:22"
+<open><version>"6.3.4"</version></open>
+<open><configfile>"/User/Configs/UserPrefs/LCF2.xml"</configfile></open>
+<open><light><source>"6400-40 Fluorometer"</source><par_in>1<sensor>"\x02$@P\x81\x02\x02\xff"<cal>-1.89<actinity>1.00</actinity><transm>1.00</transm></cal></sensor><transm>1</transm></par_in><par_out>1<sensor>"Q47592"<cal>9.12</cal></sensor></par_out></light></open>
+<open><comps><file>"/User/Configs/Comps/StdFlrComp_6.3"<header>""</header><extras></extras></file><energybal>no<f_parIn>1</f_parIn><f_parOut>0</f_parOut><alphaK>0.16</alphaK></energybal><bc_total>9.290<stomatal_ratio>1</stomatal_ratio><bc_oneside>4.645<type>2</type><table>"/Sys/Lib/BLCTable_LCF"</table><area>2</area><slope>-1.35514</slope><offset>7.35514</offset><fan>5</fan></bc_oneside></bc_total></comps></open>
+<open><prompts><onlog>off</onlog><items>"DefaultFlrPrompts"<items[1]><id>4205</id><label>"BlueAbs"</label><desc>"Leaf abs in blue"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[1]><items[2]><id>4206</id><label>"RedAbs"</label><desc>"Leaf abs in red"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[2]><items[3]><id>4213</id><label>"Adark"</label><desc>"Dark photo value"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[3]><items[4]><id>4222</id><label>"PS2/1"</label><desc>"Photosystem Distribution Factor"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[4]></items></prompts></open>
+<open><constants><oxygen>21 %</oxygen><bb_vapor>1.5</bb_vapor><bb_oxy>0.9</bb_oxy></constants></open>
+<open><stability><items>"Flr Stability"<items[1]><id>30</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.5</value></slp></items[1]><items[2]><id>23</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.01</value></slp></items[2]><items[3]><id>-5</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[3]><items[4]><id>-80</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[4]></items></stability></open>
+<open><log><format>"FlrLogFmt_6.3"<items>{ -35 -21 -36 -76 30 23 36 -84 -100 -86 -88 -87 -89 -90 4202 4211 4212 4213 4206 4205 -81 4207 4215 4216 4220 4221 -96 4222 4223 21 25 221 -33 111 -34 11 -9 -10 -8 -1 -2 -4 -5 -14 -15 -7 -12 -13 -11 -65 -66 -117 -119 -116 -118 -72 -18 -19 -77 -78 -79 -23  }<hdr>{  }</hdr></items></format><options><beep>on</beep><match>"never"<time>30</time><co2>100</co2><delta>10</delta></match><hdr>normal</hdr><rem>normal</rem><stab>no</stab><stats>no<mean>no</mean><file>no</file><period>15</period></stats><excel>yes</excel><controls>yes</controls><comm>no</comm></options><datafile>"/User/04202022_BJH_3534"</datafile><button><action>"Normal Log"<code>" LogOneObsManual "</code></action></button><autoprog>"/User/Configs/AutoProgs/AutoLog2"<active>no</active></autoprog></log></open>
+<open><a2d><avgtime>4.0 secs</avgtime><userchans><ch20>"Not available"</ch20><ch21>"Off"</ch21><ch22>"Off"</ch22><ch23>"Not available"</ch23></userchans></a2d></open>
+<open><matching><type>0</type><disp>'a'</disp><settings>><CO2Limit>10.0</CO2Limit><H2OLimit>1.0</H2OLimit><MaxAutoTime>60</MaxAutoTime><AverageTime>10</AverageTime></settings></matching></open>
+<FlrSettings><version>"6.3.4"</version><Label>"StdFlrSettings_6.1"</Label><Measure><intensity>3</intensity><rate>1</rate><filter>3</filter><gain>1</gain></Me"OPEN 6.3.4"
+"Wed Apr 20 2022 10:29:38"
+<open><version>"6.3.4"</version></open>
+<open><configfile>"/User/Configs/UserPrefs/LCF2.xml"</configfile></open>
+<open><light><source>"6400-40 Fluorometer"</source><par_in>1<sensor>"\x02$@P\x81\x02\x02\xff"<cal>-1.89<actinity>1.00</actinity><transm>1.00</transm></cal></sensor><transm>1</transm></par_in><par_out>1<sensor>"Q47592"<cal>9.12</cal></sensor></par_out></light></open>
+<open><comps><file>"/User/Configs/Comps/StdFlrComp_6.3"<header>""</header><extras></extras></file><energybal>no<f_parIn>1</f_parIn><f_parOut>0</f_parOut><alphaK>0.16</alphaK></energybal><bc_total>9.290<stomatal_ratio>1</stomatal_ratio><bc_oneside>4.645<type>2</type><table>"/Sys/Lib/BLCTable_LCF"</table><area>2</area><slope>-1.35514</slope><offset>7.35514</offset><fan>5</fan></bc_oneside></bc_total></comps></open>
+<open><prompts><onlog>off</onlog><items>"DefaultFlrPrompts"<items[1]><id>4205</id><label>"BlueAbs"</label><desc>"Leaf abs in blue"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[1]><items[2]><id>4206</id><label>"RedAbs"</label><desc>"Leaf abs in red"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[2]><items[3]><id>4213</id><label>"Adark"</label><desc>"Dark photo value"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[3]><items[4]><id>4222</id><label>"PS2/1"</label><desc>"Photosystem Distribution Factor"</desc><type>0</type><strscrlen>0</strscrlen><fmt1>0</fmt1><digs>0</digs><initsval>""</initsval><initdval>77</initdval><pick>0</pick><pickFile>""</pickFile></items[4]></items></prompts></open>
+<open><constants><oxygen>21 %</oxygen><bb_vapor>1.5</bb_vapor><bb_oxy>0.9</bb_oxy></constants></open>
+<open><stability><items>"Flr Stability"<items[1]><id>30</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.5</value></slp></items[1]><items[2]><id>23</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>0.01</value></slp></items[2]><items[3]><id>-5</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[3]><items[4]><id>-80</id><size>20</size><pcv><onoff>0</onoff><value>1</value></pcv><std><onoff>0</onoff><value>1</value></std><slp><onoff>1</onoff><value>1</value></slp></items[4]></items></stability></open>
+<open><log><format>"FlrLogFmt_6.3"<items>{ -35 -21 -36 -76 30 23 36 -84 -100 -86 -88 -87 -89 -90 4202 4211 4212 4213 4206 4205 -81 4207 4215 4216 4220 4221 -96 4222 4223 21 25 221 -33 111 -34 11 -9 -10 -8 -1 -2 -4 -5 -14 -15 -7 -12 -13 -11 -65 -66 -117 -119 -116 -118 -72 -18 -19 -77 -78 -79 -23  }<hdr>{  }</hdr></items></format><options><beep>on</beep><match>"never"<time>30</time><co2>100</co2><delta>10</delta></match><hdr>normal</hdr><rem>normal</rem><stab>no</stab><stats>no<mean>no</mean><file>no</file><period>15</period></stats><excel>yes</excel><controls>yes</controls><comm>no</comm></options><datafile>"/User/04202022_BJH_3534"</datafile><button><action>"Normal Log"<code>" LogOneObsManual "</code></action></button><autoprog>"/User/Configs/AutoProgs/AutoLog2"<active>no</active></autoprog></log></open>
+<open><a2d><avgtime>4.0 secs</avgtime><userchans><ch20>"Not available"</ch20><ch21>"Off"</ch21><ch22>"Off"</ch22><ch23>"Not available"</ch23></userchans></a2d></open>
+<open><matching><type>0</type><disp>'a'</disp><settings>><CO2Limit>10.0</CO2Limit><H2OLimit>1.0</H2OLimit><MaxAutoTime>60</MaxAutoTime><AverageTime>10</AverageTime></settings></matching></open>
+<FlrSettings><version>"6.3.4"</version><Label>"StdFlrSettings_6.1"</Label><Measure><intensity>3</intensity><rate>1</rate><filter>3</filter><gain>1</gain></Measure><Flash><type>Rectangular</type><ramp>20 %<phase1>300 ms</phase1><phase2>300 ms</phase2><phase3>300 ms</phase3></ramp><duration>0.8 s</duration><target>9</target><blue></blue><rate>4</rate><filter>6</filter><autosave>no</autosave></Flash><DarkPulse><duration>6 secs</duration><farred>8<pre>1 s</pre><post>4 s</post></farred><rate>1</rate><filter>3</filter><autosave>no</autosave></DarkPulse><Calib><unit>"\x02$@P\x81\x02\x02\xff"</unit><red>-1.89</red><blue>-0.26</blue><zero>-2933.1</zero></Calib><Constants><red_abs>0.870</red_abs><blue_abs>0.920</blue_abs><a_dark>-1</a_dark><ps_ratio>0.5</ps_ratio></Constants><Stats><Period>10</Period></Stats></FlrSettings>
+<li6400><factory><unit>"PSC-3534"</unit><serviced>"26 Mar 2019"</serviced><fuseaware>0</fuseaware><co2mixer>yes</co2mixer><co2><coeffs>{ 0 0.216968 2.28082e-05 2.24875e-08 -4.19814e-12 4.10056e-16  }</coeffs><dvdt>-3.2</dvdt><xs>{ 0.000351 0.000805  }</xs></co2><h2o><coeffs>{ 0 0.00575313 2.13143e-06 1.03429e-11  }</coeffs><dvdt>-1.7</dvdt><xs>{ 0.000782 -0.00127  }</xs></h2o><flow>{ 0 0.3705  }</flow><press>{ 87.642 0.00551  }</press></factory></li6400>
+<li6400><user><flow_zero>743.2</flow_zero><irga_zero><co2>79.9 79.9<at>29.263</at></co2><h2o>1.9 -37.1<at>29.2425</at></h2o></irga_zero><irga_span><co2>{ 0.992977 0.990471  }</co2><h2o>{ 1.00796 0.995966  }</h2o></irga_span><irga_match><co2>{ 0.682848 16.737  }</co2><h2o>{ 0.0651644 0.255967  }</h2o></irga_match><co2_mixer><pump_mv>4500</pump_mv><ppm>{ 2271.31 1087.41 430.236 261.827 120.437 70.9666 47.4686 43.1484  }</ppm><mv>{ 5000 3000 1500 1000 500 300 200 100  }</mv></co2_mixer><parin_offset>0</parin_offset><led_cal><unit>"SI-3466"</unit><mv>{ 10 25 50 100 1000 2000 3000 4000 5000  }</mv><qntm>{ 2.53776 11.4101 28.63 70.0894 894.697 1773.75 2606.28 3404.16 4160.63  }</qntm></led_cal><lcf_cal><unit>"\x02$@P\x81\x02\x02\xff"</unit><red><mv>{ 50 100 200 400 800 1500  }</mv><qntm>{ 82.0859 176.007 366.537 759.395 1553.54 2894.64  }</qntm></red><blue><mv>{ 100 500 1000 2000 3000 4000 5000  }</mv><qntm>{ 9.17396 39.2914 72.694 127.389 176.048 217.245 254.14  }</qntm></blue></lcf_cal></user></li6400>
+"10:29:45 25_light"
+$STARTOFDATA$
+"Obs"	"HHMMSS"	"FTime"	"EBal?"	"Photo"	"Cond"	"Ci"	"FCnt"	"DCnt"	"Fo"	"Fm"	"Fo'"	"Fm'"	"Fs"	"Fv/Fm"	"Fv'/Fm'"	"PhiPS2"	"Adark"	"RedAbs"	"BlueAbs"	"%Blue"	"LeafAbs"	"PhiCO2"	"qP"	"qN"	"NPQ"	"ParIn@Fs"	"PS2/1"	"ETR"	"Trmmol"	"VpdL"	"CTleaf"	"Area"	"BLC_1"	"StmRat"	"BLCond"	"Tair"	"Tleaf"	"TBlk"	"CO2R"	"CO2S"	"H2OR"	"H2OS"	"RH_R"	"RH_S"	"Flow"	"PARi"	"PARo"	"Press"	"CsMch"	"HsMch"	"CsMchSD"	"HsMchSD"	"CrMchSD"	"HrMchSD"	"StableF"	"BLCslope"	"BLCoffst"	"f_parin"	"f_parout"	"alphaK"	"Status"
+"10:30:09 Coolers: Tleaf -> 24.00 C"
+"10:30:22 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"10:30:31 CO2 Mixer: CO2R -> 400 uml"
+"10:31:45 Flow: Fixed -> 300 umol/s"
+"10:35:19 Launched AutoProg /User/Configs/AutoProgs/LightCurve2"
+"10:37:27 Stability: (Photo 20s SLP<0.5)(Cond 20s SLP<0.01)(H2OS 20s SLP<1)(F 20s SLP<1)"
+"10:37:28 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"10:37:28 CO2 Mixer: CO2R -> 400 uml"
+"10:37:28 Coolers: Tleaf -> 24.00 C"
+"10:37:28 Flow: Fixed -> 300 umol/s"
+"10:37:28 LCF Lamp: Off"
+"10:40:35 Fo=131"
+"10:40:35 RF#1 7648 um, Fmax=600 Int=9 Mod=20 Filter=50"
+"10:40:36 Fm=600"
+"10:40:58 Flow: Fixed -> 300 umol/s"
+1	"10:40:36"	689.5	0	-1.66	0.357	389	1	0	131.8	600.8	0.0	0.0	0.0	0.781	0.000	0.000	9.48	0.870	0.920	0	0.870	-4.944	0.000	1.000	0.000	0.0	0.5	0.000	10.2	2.22	24.09	0.762	6.32	1	12.6	25.30	24.09	25.25	400.55	399.94	7.678	10.232	18.40	24.53	300.7	3	518	77.57	16.8	0.172	0.0516	0.0018	0.0632	0.00205	0.5	-1.36	7.36	1.00	0.00	0.16	111115
+"10:40:58 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"10:45:59 LCF Lamp: ParIn -> 0 uml, with blue = 10 percent, actinic on"
+"10:51:00 Fs=144 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"10:51:00 RF#2 7496 um, Fmax=640 Int=9 Mod=20 Filter=50"
+"10:51:01 Fm'=640"
+"10:51:09 Dark#1 Fmin=154 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"10:51:09 Fo'=154"
+"10:51:30 Flow: Fixed -> 300 umol/s"
+2	"10:51:09"	1322.0	0	-3.76	0.366	398	2	1	131.8	600.8	154.5	640.9	144.2	0.781	0.759	0.775	9.48	0.870	0.920	0	0.870	-3.850	1.021	-0.090	-0.063	4.0	0.5	1.332	10.7	2.27	23.95	0.762	6.32	1	12.6	21.78	23.95	19.94	400.01	399.88	6.572	9.247	19.48	27.40	300.7	4	496	77.58	17.6	0.209	0.0507	0.00318	0.103	0.00243	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"10:51:32 LCF Lamp: ParIn -> 100 uml, with blue = 10 percent, actinic on"
+"10:54:42 Fs=169 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"10:54:42 RF#3 7555 um, Fmax=620 Int=9 Mod=20 Filter=50"
+"10:54:43 Fm'=620"
+"10:54:51 Dark#2 Fmin=172 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"10:54:51 Fo'=172"
+"10:55:12 Flow: Fixed -> 300 umol/s"
+3	"10:54:51"	1544.0	0	1.77	0.351	371	3	2	131.8	600.8	172.5	620.8	169.9	0.781	0.722	0.726	9.48	0.870	0.920	10	0.875	-0.089	1.006	-0.047	-0.032	98.9	0.5	31.416	10.6	2.35	23.95	0.762	6.32	1	12.6	22.61	23.95	21.37	400.11	398.59	5.481	8.146	15.44	22.94	300.7	99	418	77.57	17.3	0.204	0.0547	0.00425	0.0266	0.00203	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"10:55:14 LCF Lamp: ParIn -> 300 uml, with blue = 10 percent, actinic on"
+"10:57:31 Fs=179 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"10:57:31 RF#4 7648 um, Fmax=557 Int=9 Mod=20 Filter=50"
+"10:57:32 Fm'=557"
+"10:57:40 Dark#3 Fmin=173 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"10:57:40 Fo'=173"
+"10:58:01 Flow: Fixed -> 300 umol/s"
+4	"10:57:40"	1713.0	0	9.99	0.335	329	4	3	131.8	600.8	173.4	557.7	179.9	0.781	0.689	0.677	9.48	0.870	0.920	10	0.875	0.002	0.983	0.101	0.077	297.9	0.5	88.300	10.4	2.4	24.17	0.762	6.32	1	12.6	22.21	24.17	20.42	400.20	396.63	5.418	8.025	15.64	23.16	300.6	298	514	77.58	17.4	0.208	0.206	0.00421	0.233	0.00234	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"10:58:03 LCF Lamp: ParIn -> 500 uml, with blue = 10 percent, actinic on"
+"11:03:04 Fs=188 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:03:04 RF#5 7697 um, Fmax=525 Int=9 Mod=20 Filter=50"
+"11:03:05 Fm'=525"
+"11:03:13 Dark#4 Fmin=160 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:03:13 Fo'=160"
+"11:03:34 Flow: Fixed -> 300 umol/s"
+5	"11:03:13"	2046.0	0	16	0.331	298	5	4	131.8	600.8	160.5	525.3	188.4	0.781	0.694	0.641	9.48	0.870	0.920	10	0.875	0.015	0.924	0.172	0.144	500.7	0.5	140.451	10.2	2.4	24.33	0.762	6.32	1	12.6	21.80	24.33	19.90	399.92	394.85	5.867	8.433	17.36	24.95	300.7	501	801	77.58	17.5	0.213	0.161	0.00222	0.161	0.00237	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:03:36 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"11:08:37 Fs=189 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:08:37 RF#6 7774 um, Fmax=446 Int=9 Mod=20 Filter=50"
+"11:08:38 Fm'=446"
+"11:08:46 Dark#5 Fmin=153 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:08:46 Fo'=153"
+"11:09:07 Flow: Fixed -> 300 umol/s"
+6	"11:08:46"	2379.0	0	19.8	0.342	282	6	5	131.8	600.8	153.8	446.4	189.8	0.781	0.655	0.575	9.48	0.870	0.920	10	0.875	0.017	0.877	0.346	0.346	699.6	0.5	175.893	10.7	2.42	24.47	0.762	6.32	1	12.6	21.88	24.47	19.97	400.02	393.92	5.774	8.456	17.00	24.90	300.7	700	666	77.58	17.6	0.213	0.248	0.00395	0.28	0.00427	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:09:09 LCF Lamp: ParIn -> 900 uml, with blue = 10 percent, actinic on"
+"11:11:28 Fs=185 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:11:28 RF#7 7921 um, Fmax=394 Int=9 Mod=20 Filter=50"
+"11:11:29 Fm'=394"
+"11:11:37 Dark#6 Fmin=143 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:11:37 Fo'=143"
+"11:11:58 Flow: Fixed -> 300 umol/s"
+7	"11:11:37"	2550.0	0	22.7	0.354	271	7	6	131.8	600.8	143.0	394.9	185.5	0.781	0.638	0.530	9.48	0.870	0.920	10	0.875	0.017	0.832	0.450	0.521	901.1	0.5	209.078	10.8	2.37	24.18	0.762	6.32	1	12.6	21.63	24.18	19.72	399.60	392.77	5.720	8.432	17.10	25.21	300.7	901	524	77.58	17.5	0.211	0.184	0.00269	0.189	0.00167	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:12:00 LCF Lamp: ParIn -> 1100 uml, with blue = 10 percent, actinic on"
+"11:16:02 Fs=183 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:16:02 RF#8 8083 um, Fmax=340 Int=9 Mod=20 Filter=50"
+"11:16:03 Fm'=340"
+"11:16:11 Dark#7 Fmin=130 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:16:11 Fo'=130"
+"11:16:32 Flow: Fixed -> 300 umol/s"
+8	"11:16:11"	2824.0	0	25.7	0.355	258	8	7	131.8	600.8	130.2	340.5	183.1	0.781	0.617	0.462	9.48	0.870	0.920	10	0.875	0.017	0.749	0.553	0.765	1099.9	0.5	222.376	10.6	2.33	23.85	0.762	6.32	1	12.6	22.87	23.85	22.07	400.04	392.47	5.579	8.246	15.47	22.87	300.7	1100	570	77.58	17	0.191	0.274	0.00618	0.283	0.00531	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:16:34 LCF Lamp: ParIn -> 1300 uml, with blue = 10 percent, actinic on"
+"11:18:37 Fs=181 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:18:37 RF#9 8178 um, Fmax=312 Int=9 Mod=20 Filter=50"
+"11:18:38 Fm'=312"
+"11:18:46 Dark#8 Fmin=131 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:18:46 Fo'=131"
+"11:19:07 Flow: Fixed -> 300 umol/s"
+9	"11:18:46"	2979.0	0	27.7	0.36	250	9	8	131.8	600.8	131.3	312.6	181.1	0.781	0.580	0.421	9.48	0.870	0.920	10	0.875	0.016	0.725	0.614	0.922	1298.1	0.5	238.794	10.9	2.36	24.05	0.762	6.32	1	12.6	22.70	24.05	21.53	400.04	391.93	5.484	8.229	15.36	23.06	300.7	1298	600	77.58	17.1	0.196	0.262	0.00389	0.269	0.00287	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:19:09 LCF Lamp: ParIn -> 1500 uml, with blue = 10 percent, actinic on"
+"11:21:36 Fs=178 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:21:36 RF#10 8220 um, Fmax=282 Int=9 Mod=20 Filter=50"
+"11:21:37 Fm'=282"
+"11:21:45 Dark#9 Fmin=127 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:21:45 Fo'=127"
+"11:22:06 Flow: Fixed -> 300 umol/s"
+10	"11:21:45"	3158.0	0	28.4	0.373	251	10	9	131.8	600.8	128.0	282.8	178.5	0.781	0.548	0.369	9.48	0.870	0.920	10	0.875	0.014	0.674	0.673	1.124	1499.0	0.5	241.899	11.4	2.39	24.18	0.762	6.32	1	12.6	22.28	24.18	20.71	400.15	391.83	5.396	8.263	15.51	23.74	300.8	1499	497	77.58	17.3	0.198	0.318	0.00512	0.353	0.00579	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:22:08 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"11:25:01 Fs=178 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:25:01 RF#11 8332 um, Fmax=259 Int=9 Mod=20 Filter=50"
+"11:25:02 Fm'=259"
+"11:25:10 Dark#10 Fmin=124 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:25:10 Fo'=124"
+"11:25:31 Flow: Fixed -> 300 umol/s"
+11	"11:25:10"	3363.0	0	31.3	0.392	244	11	10	131.8	600.8	124.4	259.9	178.2	0.781	0.521	0.314	9.48	0.870	0.920	10	0.875	0.014	0.603	0.716	1.312	1799.0	0.5	247.363	11.9	2.38	24.17	0.762	6.32	1	12.6	21.44	24.17	19.55	400.17	391.07	5.346	8.345	16.18	25.25	300.7	1799	470	77.58	17.5	0.198	0.275	0.00678	0.35	0.00884	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:25:34 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"11:25:34 CO2 Mixer: CO2R -> 400 uml"
+"11:25:34 Coolers: Tleaf -> 24.00 C"
+"11:25:34 Flow: Fixed -> 300 umol/s"
+"11:35:44 3_ACi"
+"11:39:16 3_light"
+"11:39:43 Launched AutoProg /User/Configs/AutoProgs/LightCurve2"
+"11:40:24 Stability: (CO2S 15s SLP<1)(H2OS 15s SLP<1)(Flow 15s SLP<1)(F 20s SLP<1)"
+"11:40:24 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"11:40:25 CO2 Mixer: CO2R -> 400 uml"
+"11:40:25 Coolers: Tleaf -> 24.00 C"
+"11:40:25 Flow: Fixed -> 300 umol/s"
+"11:40:25 LCF Lamp: Off"
+"11:43:32 Fo=224"
+"11:43:32 RF#12 7705 um, Fmax=961 Int=9 Mod=20 Filter=50"
+"11:43:33 Fm=961"
+"11:43:55 Flow: Fixed -> 300 umol/s"
+12	"11:43:33"	4466.5	0	-3.15	0.508	391	12	10	224.5	961.5	0.0	0.0	0.0	0.767	0.000	0.000	-6.23	0.870	0.920	0	0.870	1.757	0.000	1.000	0.000	1799.0	0.5	0.000	14.6	2.26	23.75	0.937	6.09	1	12.2	25.63	23.75	25.86	399.95	399.12	4.364	8.862	10.26	20.83	300.7	2	378	77.59	16.5	0.147	0.0442	0.00302	0.0403	0.00464	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:43:55 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"11:48:56 LCF Lamp: ParIn -> 0 uml, with blue = 10 percent, actinic on"
+"11:53:57 Fs=256 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:53:57 RF#13 7665 um, Fmax=956 Int=9 Mod=20 Filter=50"
+"11:53:58 Fm'=956"
+"11:54:06 Dark#11 Fmin=266 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:54:06 Fo'=266"
+"11:54:28 Flow: Fixed -> 300 umol/s"
+13	"11:54:06"	5099.5	0	-1.69	0.483	386	13	11	224.5	961.5	266.5	956.6	256.6	0.767	0.721	0.732	-6.23	0.870	0.920	0	0.870	1.271	1.014	0.007	0.005	4.1	0.5	1.306	14	2.28	24.18	0.937	6.09	1	12.2	25.05	24.18	24.69	400.35	399.14	5.296	9.619	12.89	23.40	300.7	4	370	77.59	16.7	0.0491	0.0168	0.00137	0.0307	0.00259	0.8	-1.36	7.36	1.00	0.00	0.16	111115
+"11:54:30 LCF Lamp: ParIn -> 100 uml, with blue = 10 percent, actinic on"
+"11:58:00 Fs=304 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"11:58:00 RF#14 7685 um, Fmax=1007 Int=9 Mod=20 Filter=50"
+"11:58:01 Fm'=1007"
+"11:58:09 Dark#12 Fmin=317 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"11:58:09 Fo'=317"
+"11:58:31 Flow: Fixed -> 300 umol/s"
+14	"11:58:09"	5342.5	0	2.83	0.476	369	14	12	224.5	961.5	318.0	1008.0	304.7	0.767	0.685	0.698	-6.23	0.870	0.920	10	0.875	0.103	1.019	-0.072	-0.046	100.2	0.5	30.584	13.8	2.29	24.06	0.937	6.09	1	12.2	24.37	24.06	23.72	400.07	397.47	4.988	9.258	12.64	23.46	300.7	100	366	77.59	16.8	0.0668	0.0581	0.00186	0.0709	0.00234	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"11:58:33 LCF Lamp: ParIn -> 300 uml, with blue = 10 percent, actinic on"
+"12:00:58 Fs=327 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:00:58 RF#15 7772 um, Fmax=966 Int=9 Mod=20 Filter=50"
+"12:00:59 Fm'=966"
+"12:01:07 Dark#13 Fmin=320 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:01:07 Fo'=320"
+"12:01:29 Flow: Fixed -> 300 umol/s"
+15	"12:01:07"	5520.5	0	12.8	0.468	332	15	13	224.5	961.5	320.9	966.8	327.5	0.767	0.668	0.661	-6.23	0.870	0.920	10	0.875	0.072	0.990	-0.008	-0.005	300.6	0.5	86.971	13.6	2.29	24.09	0.937	6.09	1	12.2	24.09	24.09	23.33	400.06	394.40	5.079	9.288	13.09	23.94	300.7	301	363	77.59	17	0.0681	0.227	0.00385	0.225	0.00544	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:01:31 LCF Lamp: ParIn -> 500 uml, with blue = 10 percent, actinic on"
+"12:06:11 Fs=354 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:06:11 RF#16 7848 um, Fmax=932 Int=9 Mod=20 Filter=50"
+"12:06:12 Fm'=932"
+"12:06:20 Dark#14 Fmin=302 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:06:20 Fo'=302"
+"12:06:42 Flow: Fixed -> 300 umol/s"
+16	"12:06:20"	5833.5	0	20.8	0.468	301	16	14	224.5	961.5	302.9	932.4	354.7	0.767	0.675	0.620	-6.23	0.870	0.920	10	0.875	0.062	0.918	0.044	0.031	500.7	0.5	135.705	14.2	2.39	24.12	0.937	6.09	1	12.2	23.88	24.12	23.02	399.87	391.67	3.716	8.109	9.70	21.16	300.7	501	365	77.6	17	0.0867	0.305	0.00791	0.344	0.00835	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:06:44 LCF Lamp: ParIn -> 700 uml, with blue = 10 percent, actinic on"
+"12:08:46 Fs=356 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:08:46 RF#17 7931 um, Fmax=835 Int=9 Mod=20 Filter=50"
+"12:08:47 Fm'=835"
+"12:08:55 Dark#15 Fmin=283 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:08:55 Fo'=283"
+"12:09:17 Flow: Fixed -> 300 umol/s"
+17	"12:08:55"	5988.5	0	26.3	0.474	281	17	15	224.5	961.5	283.0	835.5	356.9	0.767	0.661	0.573	-6.23	0.870	0.920	10	0.875	0.053	0.866	0.186	0.151	701.7	0.5	175.831	14.3	2.38	24.11	0.937	6.09	1	12.2	23.52	24.11	22.47	399.88	389.94	3.766	8.194	10.04	21.85	300.7	702	371	77.6	17.1	0.0913	0.334	0.00283	0.377	0.0039	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:09:19 LCF Lamp: ParIn -> 900 uml, with blue = 10 percent, actinic on"
+"12:13:00 Fs=350 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:13:00 RF#18 8047 um, Fmax=726 Int=9 Mod=20 Filter=50"
+"12:13:01 Fm'=726"
+"12:13:09 Dark#16 Fmin=266 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:13:09 Fo'=266"
+"12:13:31 Flow: Fixed -> 300 umol/s"
+18	"12:13:09"	6242.5	0	29.4	0.483	272	18	16	224.5	961.5	266.7	726.1	350.1	0.767	0.633	0.518	-6.23	0.870	0.920	10	0.875	0.045	0.819	0.339	0.324	898.6	0.5	203.597	14.4	2.35	23.91	0.937	6.09	1	12.2	23.31	23.91	22.31	400.13	389.21	3.690	8.141	9.97	21.99	300.7	899	376	77.59	17.1	0.093	0.335	0.00417	0.373	0.00431	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:13:33 LCF Lamp: ParIn -> 1100 uml, with blue = 10 percent, actinic on"
+"12:15:37 Fs=336 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:15:37 RF#19 8123 um, Fmax=616 Int=9 Mod=20 Filter=50"
+"12:15:38 Fm'=616"
+"12:15:46 Dark#17 Fmin=249 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:15:46 Fo'=249"
+"12:16:08 Flow: Fixed -> 300 umol/s"
+19	"12:15:46"	6399.5	0	32.1	0.482	262	19	17	224.5	961.5	249.9	616.4	336.9	0.767	0.595	0.453	-6.23	0.870	0.920	10	0.875	0.040	0.762	0.485	0.560	1099.4	0.5	218.057	14.4	2.35	23.92	0.937	6.09	1	12.2	23.29	23.92	22.32	400.02	388.29	3.654	8.099	9.88	21.90	300.7	1099	374	77.59	17	0.0922	0.307	0.00649	0.32	0.00876	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:16:10 LCF Lamp: ParIn -> 1300 uml, with blue = 10 percent, actinic on"
+"12:19:18 Fs=330 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:19:18 RF#20 8220 um, Fmax=552 Int=9 Mod=20 Filter=50"
+"12:19:19 Fm'=552"
+"12:19:27 Dark#18 Fmin=242 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:19:27 Fo'=242"
+"12:19:49 Flow: Fixed -> 300 umol/s"
+20	"12:19:27"	6620.5	0	33	0.489	260	20	18	224.5	961.5	242.4	552.8	330.6	0.767	0.562	0.402	-6.23	0.870	0.920	10	0.875	0.035	0.716	0.568	0.739	1298.5	0.5	228.300	14.7	2.36	23.99	0.937	6.09	1	12.2	23.28	23.99	22.32	399.80	387.74	3.601	8.132	9.74	22.00	300.7	1299	372	77.58	17.1	0.0892	0.359	0.00922	0.435	0.0109	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:19:51 LCF Lamp: ParIn -> 1500 uml, with blue = 10 percent, actinic on"
+"12:21:52 Fs=328 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:21:52 RF#21 8293 um, Fmax=514 Int=9 Mod=20 Filter=50"
+"12:21:53 Fm'=514"
+"12:22:01 Dark#19 Fmin=236 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:22:01 Fo'=236"
+"12:22:23 Flow: Fixed -> 300 umol/s"
+21	"12:22:01"	6774.5	0	35.9	0.496	251	21	19	224.5	961.5	236.8	514.7	328.5	0.767	0.540	0.362	-6.23	0.870	0.920	10	0.875	0.032	0.670	0.617	0.868	1498.0	0.5	237.116	15	2.38	24.10	0.937	6.09	1	12.2	23.29	24.10	22.32	400.17	387.17	3.560	8.180	9.62	22.12	300.7	1498	381	77.59	17.1	0.09	0.404	0.00956	0.428	0.01	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:22:25 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"12:24:26 Fs=332 Msr=3 Mod=0.25 Filter=5 Gain=10"
+"12:24:26 RF#22 8444 um, Fmax=473 Int=9 Mod=20 Filter=50"
+"12:24:27 Fm'=473"
+"12:24:35 Dark#20 Fmin=232 Dur=6 FarRed=8 Pre=1 Post=4 Mod=0.25 Filter=5"
+"12:24:35 Fo'=232"
+"12:24:57 Flow: Fixed -> 300 umol/s"
+22	"12:24:35"	6928.5	0	36.1	0.513	255	22	20	224.5	961.5	232.5	473.2	332.4	0.767	0.509	0.298	-6.23	0.870	0.920	10	0.875	0.027	0.585	0.670	1.032	1799.3	0.5	234.283	15.2	2.35	23.96	0.937	6.09	1	12.2	22.82	23.96	21.68	400.35	387.24	3.525	8.235	9.81	22.91	300.7	1799	379	77.59	17.2	0.0884	0.491	0.0115	0.576	0.0109	1.0	-1.36	7.36	1.00	0.00	0.16	111115
+"12:24:59 LCF Lamp: ParIn -> 1800 uml, with blue = 10 percent, actinic on"
+"12:24:59 CO2 Mixer: CO2R -> 400 uml"
+"12:24:59 Coolers: Tleaf -> 24.00 C"
+"12:24:59 Flow: Fixed -> 300 umol/s"
