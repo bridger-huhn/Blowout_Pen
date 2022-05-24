@@ -5,7 +5,7 @@ library(tidyverse)
 
 #### then set your working directory to the folder with all the csv files you want to clean
 
-setwd("/Users/bridgerhuhn/Documents/Research/Blowout_Pen/DATA/2022GH/LICOR") ### change this line to be your file path
+setwd("/Users/bridgerhuhn/Dropbox/2022_Pen_GH/Licor_6400csv/05182022-05192022") ### change this line to be your file path
 
 #gets all files with the given file type should be .csv
 allFiles<-list.files(pattern = "*.csv")
@@ -28,6 +28,7 @@ for (i in 1:length(allFiles)){
   ### some irgas have Mch columns, this removes those
   dat <-dat[,-(which(grepl("Mch",names(dat))))]
   dat <- dat[,-82]
+  dat$filename <- allFiles[i]
   #binds data frames together
   outDF<- rbind(outDF, dat)
 }
@@ -79,12 +80,13 @@ LC<-function(dat){
   dat <- dat[which(dat$Area != ""),] 
   
   #the following code turns all character columns into numeric
-
-  dat[cols.num[4:80]] <- sapply(sapply(dat[4:80],as.character),as.numeric)
+  
+  dat[,4:80] <- sapply(sapply(dat[4:80],as.character),as.numeric)
   return(dat)
 }
 
 d<- LC(outDF)
-rm(outDF)
+rm(outDF, dat, allFiles,i,meta)
 
 ### now the dataframe named "d" has a comment column that has all of your remarks in it
+### it also has a filename column
