@@ -1,37 +1,5 @@
-library(tidyverse)
-### this program works best if your Remarks are in the formatte "number_typeofmeasurement" for example 6_light or 23_ACi
+require(tidyverse)
 
-### first step is to open your licor files in excel and save them all as .csv files
-
-# this line automatically sets the wd to the parent directory of this script
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
-#gets all files with the given file type should be .csv
-allFiles <- Sys.glob("./DATA/2022GH/LICOR/*.csv")
-outDF <- data.frame() ### creates a dataframe to store
-
-## this for-loop combines all the files into one big file
-for (i in 1:length(allFiles)){
-  #for the current file read it in
-  dat<- read.csv(allFiles[i], row.names = NULL)
-  
-  #puts meta data in a column
-  meta<- dat[1,1]
-  #stores the dat in which this file was created
-  dat$meta <- meta 
-  
-  ## rename columns: in the first column, find the first row that contains
-  # the word "Obs." This marks the header row. Set the dataframe names
-  # to the names in this row.
-  names(dat)<- as.character(unlist(dat[min(which(dat[,1] == "Obs")),])) 
-  
-  ### some irgas have Mch columns, this removes those
-  dat <-dat[,-(which(grepl("Mch",names(dat))))]
-  dat <- dat[,-82]
-  #binds data frames together
-  outDF<- rbind(outDF, dat)
-}
-dat <- outDF
 ## this function gets rid of rows that aren't necessary 
 LC<-function(dat){
   #creates a comments column
@@ -83,7 +51,35 @@ LC<-function(dat){
   return(dat)
 }
 
-d<- LC(outDF)
-rm(outDF)
+clean_raw_csvs <- function(allFiles){
+  outDF <- data.frame() ### creates a dataframe to store
+  
+  ## this for-loop combines all the files into one big file
+  for (i in 1:length(allFiles)){
+    #for the current file read it in
+    dat<- read.csv(allFiles[i], row.names = NULL)
+    
+    #puts meta data in a column
+    meta<- dat[1,1]
+    #stores the dat in which this file was created
+    dat$meta <- meta 
+    
+    ## rename columns: in the first column, find the first row that contains
+    # the word "Obs." This marks the header row. Set the dataframe names
+    # to the names in this row.
+    names(dat)<- as.character(unlist(dat[min(which(dat[,1] == "Obs")),])) 
+    
+    ### some irgas have Mch columns, this removes those
+    dat <-dat[,-(which(grepl("Mch",names(dat))))]
+    dat <- dat[,-82]
+    #binds data frames together
+    outDF <- rbind(outDF, dat)
+  }
+  
+  ### now the dataframe named "d" has a comment column that has all of your remarks in it
+  d <- LC(outDF)
+  
+  return(d)
+}
 
-### now the dataframe named "d" has a comment column that has all of your remarks in it
+
