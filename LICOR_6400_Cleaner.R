@@ -3,16 +3,14 @@ library(tidyverse)
 
 ### first step is to open your licor files in excel and save them all as .csv files
 
-#### then set your working directory to the folder with all the csv files you want to clean
-
-setwd("/Users/bridgerhuhn/Documents/Research/Blowout_Pen/DATA/2022GH/LICOR") ### change this line to be your file path
+# this line automatically sets the wd to the parent directory of this script
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #gets all files with the given file type should be .csv
-allFiles<-list.files(pattern = "*.csv")
+allFiles <- Sys.glob("./DATA/2022GH/LICOR/*.csv")
+outDF <- data.frame() ### creates a dataframe to store
 
-outDF<- data.frame() ### creates a dataframe to store
-
-## this for loop combines all the files into one big file
+## this for-loop combines all the files into one big file
 for (i in 1:length(allFiles)){
   #for the current file read it in
   dat<- read.csv(allFiles[i], row.names = NULL)
@@ -22,7 +20,9 @@ for (i in 1:length(allFiles)){
   #stores the dat in which this file was created
   dat$meta <- meta 
   
-  ## renames columns using by finding "obs"
+  ## rename columns: in the first column, find the first row that contains
+  # the word "Obs." This marks the header row. Set the dataframe names
+  # to the names in this row.
   names(dat)<- as.character(unlist(dat[min(which(dat[,1] == "Obs")),])) 
   
   ### some irgas have Mch columns, this removes those
@@ -79,8 +79,7 @@ LC<-function(dat){
   dat <- dat[which(dat$Area != ""),] 
   
   #the following code turns all character columns into numeric
-
-  dat[cols.num[4:80]] <- sapply(sapply(dat[4:80],as.character),as.numeric)
+  dat[, 4:80] <- sapply(sapply(dat[4:80],as.character),as.numeric)
   return(dat)
 }
 
