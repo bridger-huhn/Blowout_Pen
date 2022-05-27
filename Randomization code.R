@@ -38,7 +38,7 @@ dFINAL <- rbind(d2,d3)
 ####rand with burial ####
 rnd <- read.csv("/Users/bridgerhuhn/Documents/Research/Blowout_Pen/DATA/2022GH/Metadata.csv") %>% 
   filter(Treatment != "burial"& Treatment!= "droughtburial")
-set.seed(05192022) #### put the date of measurements to get the randomization
+set.seed(05252022) #### put the date of measurements to get the randomization
 sample(rnd$Number, size = length(rnd$Number), replace = FALSE)    
 drought <- rnd %>% filter(Treatment == "drought")
 ww <- rnd %>% filter(Treatment == "WW")
@@ -47,5 +47,19 @@ ww <- rnd %>% filter(Treatment == "WW")
 sample(ww$Number, size = nrow(ww), replace = FALSE)
 sample(drought$Number, size = nrow(drought), replace = FALSE)
 
+
 all <- read.csv("/Users/bridgerhuhn/Documents/Research/Blowout_Pen/DATA/2022GH/Metadata.csv") 
+VWC_Sensors <- read.csv("/Users/bridgerhuhn/Documents/Research/Blowout_Pen/DATA/2022GH/Metadata.csv") %>% 
+  filter(VWC_Sensor == "s")
+T1 <-  VWC_Sensors %>% filter(Treatment == "WW")
+T2 <-  VWC_Sensors %>% filter(Treatment == "drought")
+T3 <- VWC_Sensors %>% filter(Treatment =="droughtburial")
+T4 <- VWC_Sensors %>% filter(Treatment == "burial")
+
+set.seed(05262022)
+
+sample(T1$Number, size = 7, replace = FALSE)
+sample(T2$Number, size = 7, replace = FALSE)
+sample(T3$Number, size = 8, replace = FALSE)
+sample(T4$Number, size = 8, replace = FALSE)
 sample(all$Number, size = nrow(all), replace = FALSE)
