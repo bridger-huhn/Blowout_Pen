@@ -65,7 +65,7 @@ clean_raw_csvs <- function(filepath){
   for (i in 1:length(allFiles)){
     #for the current file read it in
     dat<- read.csv(allFiles[i], row.names = NULL)
-    
+    #dat$filename <- allFiles[i]
     #puts meta data in a column
     meta<- dat[1,1]
     #stores the dat in which this file was created
@@ -79,6 +79,7 @@ clean_raw_csvs <- function(filepath){
     ### some irgas have Mch columns, this removes those
     dat <-dat[,-(which(grepl("Mch",names(dat))))]
     dat <- dat[,-82]
+    dat$filename <- allFiles[i]
     #binds data frames together
     outDF <- rbind(outDF, dat)
   }
