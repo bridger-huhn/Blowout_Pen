@@ -51,7 +51,12 @@ LC<-function(dat){
   return(dat)
 }
 
-clean_raw_csvs <- function(allFiles){
+clean_raw_csvs <- function(filepath){
+  setwd("") ### change this line to be your file path
+  
+  #gets all files with the given file type should be .csv
+  allFiles<-list.files(pattern = "*.csv")
+  
   outDF <- data.frame() ### creates a dataframe to store
   
   ## this for-loop combines all the files into one big file
