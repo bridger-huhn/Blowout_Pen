@@ -51,8 +51,10 @@ LC<-function(dat){
   return(dat)
 }
 
+
+## this function puts all of the files in one data frame. Put the file path into this function.
 clean_raw_csvs <- function(filepath){
-  setwd("") ### change this line to be your file path
+  setwd(filepath) ### change this line to be your file path
   
   #gets all files with the given file type should be .csv
   allFiles<-list.files(pattern = "*.csv")
