@@ -1,0 +1,5 @@
+"TOA5","Pen2 Dunes CR1K","CR1000","66462","CR1000.Std.32.03","CPU:FIELD_READY_PEN_2_05252022.CR1","23599","DataTableInfo"
+"TIMESTAMP","RECORD","DataTableName(1)","DataTableName(2)","SkippedRecord(1)","SkippedRecord(2)","DataRecordSize(1,1)","DataRecordSize(1,2)","DataRecordSize(2,1)","DataRecordSize(2,2)","SecsPerRecord(1)","SecsPerRecord(2)","DataFillDays(1,1)","DataFillDays(1,2)","DataFillDays(2,1)","DataFillDays(2,2)","DataFilled(1,1)","DataFilled(1,2)","DataFilled(2,1)","DataFilled(2,2)"
+"TS","RN","","","","","records","records","records","records","","","days","days","days","days","","","",""
+"","","","","","","","","","","","","","","","","","","",""
+"2022-06-08 17:22:17.25",1,"BattMin_PTemp","Pen2_table",0,0,12860,0,12860,0,1800,1800,267.9167,0,267.9167,0,"0.0 percent filled","0.0 percent filled","0.0 percent filled","0.0 percent filled"
